@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2016-04-03T04:21:01Z",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "node/594958315",
+      "properties": {
+        "@id": "node/594958315",
+        "building": "yes",
+        "name": "Union Christian College (UCC)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.33386,
+          10.12551
+        ]
+      }
+    }
+  ]
+}

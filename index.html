@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.16.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+        #sidebar { position:absolute; top:0; bottom:0; width:20%; background-color: #ffffff; }
+        /*#menu {
+            position: absolute;
+            background: #fff;
+            font-family: 'Open Sans', sans-serif;
+        }*/
+        .btn {
+            background: #3498db;
+            color: #ffffff;
+            width:33.333%;
+            height:40px;
+            border:1px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: #3cb0fd;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id='map'></div>
+<div id='sidebar'>
+        <button id='scientists' value='scientists' class='btn' />
+        <label for='scientists'>Scientists</label>
+        <button id='institutes' value='institutes' class='btn' />
+        <label for='institutes'>Institutes</label>
+        <button id='research' value='research' class='btn' />
+        <label for='research'>Research</label>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.16.0/mapbox-gl.js'></script>
+<script src="map.js"></script>
+</html>
+
