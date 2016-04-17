@@ -1,0 +1,151 @@
+{
+  "type": "FeatureCollection",
+  "features": [{
+    "type": "Feature",
+    "properties": {
+      "scientist": ["Aruna Dhathathreyan"],
+      "institute": "Central Leather Research Institute",
+      "place": {"Chennai":"city"},
+      "author": "Nandita Jayaraj",
+      "science": "Biophysics",
+      "tags": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+          80.2829533, 
+          13.0796914
+      ]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "scientist": ["Kusala Rajendran"],
+      "institute": "Indian Institute of Science, Bangalore",
+      "author": "Nandita Jayaraj",
+      "place": {"Bangalore":"city"},
+      "science": "Geophysics",
+      "tags": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        77.5912997,
+        12.9791198
+      ]
+    }
+  }, {
+    "type": "Feature",
+    "properties": {
+      "scientist": ["Elizabeth V. Mathew"],
+      "institute": "Union Christian College, Aluva",
+      "place": {"Aluva":"town"},
+      "author": "Nandita Jayaraj",
+      "science": "Arachnology",
+      "tags": ""
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.3525732,
+        10.1078869
+      ]
+    }
+  },
+  {
+  "type": "Feature",
+  "properties": {
+    "place": {"Kalimpong":"town"},
+    "scientist": ["Natasha Gurung", "Husnara Sharma"],
+    "institute": "Indian Agricultural Research Institute, Kalimpong, Gorkhaland",
+    "author": "Aashima Dogra",
+    "science": "Horticulture",
+    "tags": ""
+    
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      88.4729,
+      27.07169
+    ]
+  }
+ },
+ {
+  "type": "Feature",
+  "properties": {
+    "place": {"Varanasi":"city"},
+    "scientist": ["Kavita Shah"],
+    "institute": "Institute of Environmental and Sustainable Development, BHU, Varanasi",
+    "author": "Aashima Dogra",
+    "science": "Environmental Biotechnology",
+    "tags": ""
+    
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      82.9887,
+      25.3124
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "place": {"Varanasi":"city"},
+    "scientist": ["Nidhi Shah"],
+    "institute": "Institute of Environmental and Sustainable Development, BHU, Varanasi",
+    "author": "Aashima Dogra",
+    "science": "Climate Change and Disease Research",
+    "tags": ""
+    
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      82.9888,
+      25.3123
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "place": {"Ajmer":"city"},
+    "scientist": ["Monica Bhatnagar"],
+    "institute": "Maharishi Dayanand Saraswathi University",
+    "author": "Aashima Dogra",
+    "science": "Algologist",
+    "tags": ""
+    
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      74.6394,
+      26.4547
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "place": {"Trivandrum":"city"},
+    "scientist": ["Sandhya Sukumaran"],
+    "institute": "Central Marine Fisheries Research Institute",
+    "author": "Nandita Jayaraj",
+    "science": "Marine science",
+    "tags": ""
+    
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      76.9574,
+      8.5058
+    ]
+  }
+}
+]
+}
