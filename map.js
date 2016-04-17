@@ -31,7 +31,7 @@ map.on('style.load', function () {
         'paint': {
             'circle-radius': 8,
             'circle-color': '#e62749',
-            'circle-blur' : .9
+            'circle-blur': .9
         }
     });
 
@@ -42,32 +42,32 @@ map.on('style.load', function () {
     ];
     layers.forEach(function (layer, i) {
         map.addLayer({
-            "id": "cluster-" + i,
-            "type": "circle",
-            "source": "places",
-            "paint": {
-                "circle-color": layer[1],
-                "circle-radius": 20,
-                "circle-blur": 0.9
+            'id': 'cluster-' + i,
+            'type': 'circle',
+            'source': 'places',
+            'paint': {
+                'circle-color': layer[1],
+                'circle-radius': 20,
+                'circle-blur': 0.9
             },
-            "filter": i === 0 ?
-                [">=", "point_count", layer[0]] :
-                ["all",
-                    [">=", "point_count", layer[0]],
-                    ["<", "point_count", layers[i - 1][0]]]
+            'filter': i === 0 ?
+                ['>=', 'point_count', layer[0]] :
+                ['all',
+                    ['>=', 'point_count', layer[0]],
+                    ['<', 'point_count', layers[i - 1][0]]]
         });
     });
     map.addLayer({
-        "id": "cluster-count",
-        "type": "symbol",
-        "source": "places",
-        "layout": {
-            "text-field": "{point_count}",
-            "text-font": [
-                    "DIN Offc Pro Medium",
-                    "Arial Unicode MS Bold"
-                ],
-            "text-size": 12
+        'id': 'cluster-count',
+        'type': 'symbol',
+        'source': 'places',
+        'layout': {
+            'text-field': '{point_count}',
+            'text-font': [
+                'DIN Offc Pro Medium',
+                'Arial Unicode MS Bold'
+            ],
+            'text-size': 12
         }
     });
 
