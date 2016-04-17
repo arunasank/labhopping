@@ -113,10 +113,10 @@
   "type": "Feature",
   "properties": {
     "place": {"Ajmer":"city"},
-    "scientist": [""],
-    "institute": "",
+    "scientist": ["Monica Bhatnagar"],
+    "institute": "Maharishi Dayanand Saraswathi University",
     "author": "Aashima Dogra",
-    "science": "",
+    "science": "Algologist",
     "tags": ""
     
   },
@@ -125,6 +125,25 @@
     "coordinates": [
       74.6394,
       26.4547
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "place": {"Trivandrum":"city"},
+    "scientist": ["Sandhya Sukumaran"],
+    "institute": "Central Marine Fisheries Research Institute",
+    "author": "Nandita Jayaraj",
+    "science": "Marine science",
+    "tags": ""
+    
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      76.9574,
+      8.5058
     ]
   }
 }
