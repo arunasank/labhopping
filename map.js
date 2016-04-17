@@ -88,15 +88,14 @@ map.on('click', function (e) {
     // Populate the popup and set its coordinates
     // based on the feature found.
     if (feature.properties.scientist) {
+        console.log(JSON.stringify(feature));
         var popup = new mapboxgl.Popup()
             .setLngLat(feature.geometry.coordinates)
             .setHTML(feature.properties.scientist)
             .addTo(map);
     }
     else {
-
-        console.log(JSON.stringify(feature));
-        map.setZoom(6);
+        map.setZoom(6.5);
         map.setCenter(e.lngLat);
         console.log(e.lngLat);
     }
