@@ -70,5 +70,63 @@
       27.07169
     ]
   }
-}]
+ },
+ {
+  "type": "Feature",
+  "properties": {
+    "place": {"Varanasi":"city"},
+    "scientist": ["Kavita Shah"],
+    "institute": "Institute of Environmental and Sustainable Development, BHU, Varanasi",
+    "author": "Aashima Dogra",
+    "science": "Environmental Biotechnology",
+    "tags": ""
+    
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      82.9887,
+      25.3124
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "place": {"Varanasi":"city"},
+    "scientist": ["Nidhi Shah"],
+    "institute": "Institute of Environmental and Sustainable Development, BHU, Varanasi",
+    "author": "Aashima Dogra",
+    "science": "Climate Change and Disease Research",
+    "tags": ""
+    
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      82.9888,
+      25.3123
+    ]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "place": {"Ajmer":"city"},
+    "scientist": [""],
+    "institute": "",
+    "author": "Aashima Dogra",
+    "science": "",
+    "tags": ""
+    
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      74.6394,
+      26.4547
+    ]
+  }
+}
+]
 }
