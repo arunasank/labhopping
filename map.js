@@ -79,6 +79,7 @@ map.on('click', function (e) {
     var features = map.queryRenderedFeatures(e.point, {layers: ['non-cluster-places']});
 
     if (!features.length) {
+        console.log(map.getZoom());
         return;
     }
 
@@ -91,6 +92,13 @@ map.on('click', function (e) {
             .setLngLat(feature.geometry.coordinates)
             .setHTML(feature.properties.scientist)
             .addTo(map);
+    }
+    else {
+
+        console.log(JSON.stringify(feature));
+        map.setZoom(6);
+        map.setCenter(e.lngLat);
+        console.log(e.lngLat);
     }
 });
 
