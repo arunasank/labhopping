@@ -29,16 +29,16 @@ map.on('style.load', function(){
             visibility: 'visible'
         },
         'paint': {
-            'circle-radius': 14,
-            'circle-color': '#f1f075',
+            'circle-radius': 8,
+            'circle-color': '#e62749',
             'circle-blur' : .9
         }
     });
 
     var layers = [
-        [4, '#e62749'],
-        [2, '#e62749'],
-        [0, '#e62749']
+        [4, '#F28526'],
+        [2, '#F28526'],
+        [0, '#F28526']
     ];
     layers.forEach(function (layer, i) {
         map.addLayer({
@@ -47,7 +47,7 @@ map.on('style.load', function(){
             "source": "places",
             "paint": {
                 "circle-color": layer[1],
-                "circle-radius": 18,
+                "circle-radius": 20,
                 "circle-blur": 0.9
             },
             "filter": i == 0 ?
@@ -76,7 +76,7 @@ map.on('style.load', function(){
 
 
 map.on('click', function (e) {
-    var features = map.queryRenderedFeatures(e.point, { layers: ['places'] });
+    var features = map.queryRenderedFeatures(e.point, { layers: ['non-cluster-places'] });
 
     if (!features.length) {
         return;
