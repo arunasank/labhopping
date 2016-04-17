@@ -7,6 +7,7 @@
       "institute": "Central Leather Research Institute",
       "place": {"Chennai":"city"},
       "author": "Nandita Jayaraj",
+      "url": "https://thelifeofscience.com/2016/03/07/aruna/",
       "science": "Biophysics",
       "tags": ""
     },
@@ -23,6 +24,7 @@
       "scientist": ["Kusala Rajendran"],
       "institute": "Indian Institute of Science, Bangalore",
       "author": "Nandita Jayaraj",
+      "url": "https://thelifeofscience.com/2016/02/29/kusala/",
       "place": {"Bangalore":"city"},
       "science": "Geophysics",
       "tags": ""
@@ -41,6 +43,7 @@
       "institute": "Union Christian College, Aluva",
       "place": {"Aluva":"town"},
       "author": "Nandita Jayaraj",
+      "url": "https://thelifeofscience.com/2016/03/28/elizabeth-arachnologist/",
       "science": "Arachnology",
       "tags": ""
     },
@@ -58,6 +61,7 @@
     "place": {"Kalimpong":"town"},
     "scientist": ["Natasha Gurung", "Husnara Sharma"],
     "institute": "Indian Agricultural Research Institute, Kalimpong, Gorkhaland",
+    "url": "https://thelifeofscience.com/2016/03/21/natasha-and-husnara-save-the-mandarins/",
     "author": "Aashima Dogra",
     "science": "Horticulture",
     "tags": ""
@@ -77,6 +81,7 @@
     "place": {"Varanasi":"city"},
     "scientist": ["Kavita Shah"],
     "institute": "Institute of Environmental and Sustainable Development, BHU, Varanasi",
+    "url": "https://thelifeofscience.com/2016/04/04/kavita-environmentalbiotech/",
     "author": "Aashima Dogra",
     "science": "Environmental Biotechnology",
     "tags": ""
@@ -96,6 +101,7 @@
     "place": {"Varanasi":"city"},
     "scientist": ["Nidhi Shah"],
     "institute": "Institute of Environmental and Sustainable Development, BHU, Varanasi",
+    "url": "https://thelifeofscience.com/2016/03/14/nidhi/",
     "author": "Aashima Dogra",
     "science": "Climate Change and Disease Research",
     "tags": ""
