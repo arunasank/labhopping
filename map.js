@@ -16,7 +16,7 @@ var places = new mapboxgl.GeoJSONSource({
     'clusterMaxZoom': 14, // Max zoom to cluster points on
     'clusterRadius': 50
 });
-map.on('style.load', function(){
+map.on('style.load', function () {
 
 	map.addSource('places', places);
 
@@ -50,7 +50,7 @@ map.on('style.load', function(){
                 "circle-radius": 20,
                 "circle-blur": 0.9
             },
-            "filter": i == 0 ?
+            "filter": i === 0 ?
                 [">=", "point_count", layer[0]] :
                 ["all",
                     [">=", "point_count", layer[0]],
@@ -76,7 +76,7 @@ map.on('style.load', function(){
 
 
 map.on('click', function (e) {
-    var features = map.queryRenderedFeatures(e.point, { layers: ['non-cluster-places'] });
+    var features = map.queryRenderedFeatures(e.point, {layers: ['non-cluster-places']});
 
     if (!features.length) {
         return;
@@ -86,10 +86,12 @@ map.on('click', function (e) {
 
     // Populate the popup and set its coordinates
     // based on the feature found.
-    var popup = new mapboxgl.Popup()
-        .setLngLat(feature.geometry.coordinates)
-        .setHTML(feature.properties.scientist)
-        .addTo(map);
+    if (feature.properties.scientist) {
+        var popup = new mapboxgl.Popup()
+            .setLngLat(feature.geometry.coordinates)
+            .setHTML(feature.properties.scientist)
+            .addTo(map);
+    }
 });
 
 
