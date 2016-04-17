@@ -116,7 +116,7 @@ map.on('click', function (e) {
         console.log(JSON.stringify(feature));
         var popup = new mapboxgl.Popup()
             .setLngLat(feature.geometry.coordinates)
-            .setHTML(feature.properties.scientist)
+            .setHTML("<a href=" + feature.properties.url + ">"+ feature.properties.scientist +"</a>" )
             .addTo(map);
     }
     else {
