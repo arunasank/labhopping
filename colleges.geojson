@@ -359,5 +359,30 @@
         10.12551
       ]
     }
-  }]
+  },
+  {
+  "type": "Feature",
+  "id": "node/342097733",
+  "properties": {
+    "timestamp": "2009-04-24T13:46:22Z",
+    "version": "2",
+    "changeset": "927379",
+    "user": "Claudius Henrichs",
+    "uid": "18069",
+    "AND_a_nosr_p": "10011134",
+    "name": "Kalimpong",
+    "place": "town",
+    "population": "10000",
+    "postal_code": "734301",
+    "source": "AND",
+    "id": "node/342097733"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      88.4729,
+      27.07169
+    ]
+  }
+}]
 }
