@@ -79,7 +79,6 @@ map.on('click', function (e) {
     var features = map.queryRenderedFeatures(e.point, {layers: ['non-cluster-places']});
 
     if (!features.length) {
-        console.log(map.getZoom());
         return;
     }
 
@@ -88,16 +87,14 @@ map.on('click', function (e) {
     // Populate the popup and set its coordinates
     // based on the feature found.
     if (feature.properties.scientist) {
-        console.log(JSON.stringify(feature));
         var popup = new mapboxgl.Popup()
             .setLngLat(feature.geometry.coordinates)
-            .setHTML(feature.properties.scientist)
+            .setHTML("<a target='_blank' href=" + url + ">"+ feature.properties.scientist +"</a>" )
             .addTo(map);
     }
     else {
         map.setZoom(6.5);
         map.setCenter(e.lngLat);
-        console.log(e.lngLat);
     }
 });
 
