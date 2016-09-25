@@ -4,6 +4,10 @@
     "type": "Feature",
     "id": "node/3401391999",
     "properties": {
+      "scientist": ["Kusala Rajendran"],
+      "institute": "Indian Institute of Science, Bangalore",
+      "author": "Nandita Jayaraj",
+      "science": "Geophysics",
       "@id": "node/3401391999",
       "alt_name": "Bangalore",
       "capital": "4",
@@ -39,6 +43,10 @@
     "type": "Feature",
     "id": "node/3233393892",
     "properties": {
+      "scientist": ["Aruna Dhathathreyan"],
+      "institute": "Central Leather Research Institute",
+      "author": "Nandita Jayaraj",
+      "science": "Biophysics",
       "@id": "node/3233393892",
       "capital": "4",
       "gns:dsg": "ADM2",
@@ -74,14 +82,18 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        80.2829533,
-        13.0796914
+        80.2829535,
+        13.0796916
       ]
     }
   }, {
     "type": "Feature",
     "id": "node/287687798",
     "properties": {
+      "scientist": ["Nidhi Singh"],
+      "institute": "Institute of Environment and Sustainable Development, Varanasi",
+      "author": "Aashima Dogra",
+      "science": "Climate Change And Disease Research Scholar",
       "@id": "node/287687798",
       "is_in": "India",
       "is_in:continent": "Asia",
@@ -109,6 +121,10 @@
     "type": "Feature",
     "id": "node/342097733",
     "properties": {
+      "scientist": ["Natasha Gurung", "Husnara Sharma"],
+      "institute": "Indian Agricultural Research Institute, Kalimpong, West Bengal",
+      "author": "Aashima Dogra",
+      "science": "Horticulturist",
       "@id": "node/342097733",
       "AND_a_nosr_p": "10011134",
       "name": "Kalimpong",
@@ -128,6 +144,10 @@
     "type": "Feature",
     "id": "node/1880437827",
     "properties": {
+      "scientist": ["Elizabeth V. Mathew"],
+      "institute": "Union Christian College, Aluva",
+      "author": "Nandita Jayaraj",
+      "science": "Arachnologist",
       "@id": "node/1880437827",
       "is_in": "Ernakulam;Kerala;KL;India;IN",
       "is_in:country": "india",
@@ -147,6 +167,10 @@
     "type": "Feature",
     "id": "node/287687798",
     "properties": {
+      "scientist": ["Kavita Shah"],
+      "institute": "Institute of Environment and Sustainable Development, Varanasi",
+      "author": "Aashima Dogra",
+      "science": "Environmental Biotechnologist",
       "@id": "node/287687798",
       "is_in": "India",
       "is_in:continent": "Asia",
@@ -166,14 +190,18 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        83.0076292,
-        25.3356491
+        83.0076294,
+        25.3356493
       ]
     }
   }, {
     "type": "Feature",
     "id": "node/245748597",
     "properties": {
+      "scientist": ["Monica Bhatnagar"],
+      "institute": "MDS University, Ajmer, Rajasthan",
+      "author": "Aashima Dogra",
+      "science": "Microbiologist",
       "@id": "node/245748597",
       "is_in:continent": "Asia",
       "is_in:country": "India",
@@ -202,6 +230,10 @@
     "type": "Feature",
     "id": "node/340748436",
     "properties": {
+      "scientist": ["Kriti Faujdar"],
+      "institute": "ISRO, Hassan",
+      "author": "Nandita Jayaraj",
+      "science": "Computer Scientist",
       "@id": "node/340748436",
       "name": "Hassan",
       "name:ja": "ハーサン",
@@ -222,6 +254,10 @@
     "type": "Feature",
     "id": "node/287687798",
     "properties": {
+      "scientist": ["Ramadevi Nimmanapalli"],
+      "institute": "Banaras Hindu University",
+      "author": "Aashima Dogra",
+      "science": "Veterinarian and Biochemist",
       "@id": "node/287687798",
       "is_in": "India",
       "is_in:continent": "Asia",
@@ -241,14 +277,18 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        83.0076292,
-        25.3356491
+        83.0076296,
+        25.3356495
       ]
     }
   }, {
     "type": "Feature",
     "id": "node/245581432",
     "properties": {
+      "scientist": ["Aardra Chandra Mouli", "Gayathri Thankachi"],
+      "institute": "Aeka Biochemicals",
+      "author": "Nandita Jayaraj",
+      "science": "Biotechnology entrepreneurs",
       "@id": "node/245581432",
       "alt_name": "Trivandrum",
       "capital": "4",
@@ -284,6 +324,10 @@
     "type": "Feature",
     "id": "node/245581432",
     "properties": {
+      "scientist": ["Radhika Nair"],
+      "institute": "Rajiv Gandhi Center for Biotechnology",
+      "author": "Nandita Jayaraj",
+      "science": "Cancer Biologist",
       "@id": "node/245581432",
       "alt_name": "Trivandrum",
       "capital": "4",
@@ -311,14 +355,18 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        76.9570481,
-        8.5058909
+        76.9570483,
+        8.5058911
       ]
     }
   }, {
     "type": "Feature",
     "id": "node/1068792671",
     "properties": {
+      "scientist": ["Hemlata Manglani"],
+      "institute": "Central University of Rajasthan",
+      "author": "Aashima Dogra",
+      "science": "Economist",
       "@id": "node/1068792671",
       "capital": "5",
       "is_in:continent": "Asia",
@@ -344,6 +392,10 @@
     "type": "Feature",
     "id": "node/16173235",
     "properties": {
+      "scientist": ["Vidita Vaidya"],
+      "institute": "Tata Institute of Fundamental Research",
+      "author": "Nandita Jayaraj",
+      "science": "Neurobiologist",
       "@id": "node/16173235",
       "capital": "4",
       "ele": "8",
@@ -400,6 +452,10 @@
     "type": "Feature",
     "id": "node/125904109",
     "properties": {
+      "scientist": ["Anu Sabhlok"],
+      "institute": "IISER - Mohali",
+      "author": "Aashima Dogra",
+      "science": "Social Scientist",
       "@id": "node/125904109",
       "alt_name": "Ajitgarh",
       "name": "Mohali",
@@ -420,6 +476,10 @@
     "type": "Feature",
     "id": "node/16173235",
     "properties": {
+      "scientist": ["Maryam Shojaei"],
+      "institute": "IIT - Bombay",
+      "author": "Nandita Jayaraj",
+      "science": "Electrical Engineer",
       "@id": "node/16173235",
       "capital": "4",
       "ele": "8",
@@ -468,14 +528,18 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        72.8308337,
-        18.9321862
+        72.8308339,
+        18.9321864
       ]
     }
   }, {
     "type": "Feature",
     "id": "node/1068792671",
     "properties": {
+      "scientist": ["Mamta Rani"],
+      "institute": "Central University of Rajasthan",
+      "author": "Aashima Dogra",
+      "science": "Computer Scientist",
       "@id": "node/1068792671",
       "capital": "5",
       "is_in:continent": "Asia",
@@ -493,14 +557,18 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        74.8603448,
-        26.5891537
+        74.8603450,
+        26.5891539
       ]
     }
   }, {
     "type": "Feature",
     "id": "node/16173235",
     "properties": {
+      "scientist": ["Annamma Anil"],
+      "institute": "Institute of Chemical Technology",
+      "author": "Nandita Jayaraj",
+      "science": "Industrial Microbiologist",
       "@id": "node/16173235",
       "capital": "4",
       "ele": "8",
@@ -549,14 +617,18 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        72.8308337,
-        18.9321862
+        72.8308341,
+        18.9321866
       ]
     }
   }, {
     "type": "Feature",
     "id": "node/245612641",
     "properties": {
+      "scientist": ["Smitha Hegde"],
+      "institute": "St. Aloysius College",
+      "author": "Nandita Jayaraj",
+      "science": "Pteridologist",
       "@id": "node/245612641",
       "alt_name": "Kudla",
       "capital": "5",
@@ -590,6 +662,10 @@
     "type": "Feature",
     "id": "node/16173236",
     "properties": {
+      "scientist": ["Soumya Prasad"],
+      "institute": "Jawaharlal Nehru University",
+      "author": "Aashima Dogra",
+      "science": "Forest Ecologist",
       "@id": "node/16173236",
       "capital": "2",
       "capital_ISO3166-1": "yes",
@@ -740,6 +816,10 @@
     "type": "Feature",
     "id": "node/16173235",
     "properties": {
+      "scientist": ["Prajakta Dandekar"],
+      "institute": "Institute of Chemical Technology",
+      "author": "Nandita Jayaraj",
+      "science": "Pharmaceutical Biotechnologist",
       "@id": "node/16173235",
       "capital": "4",
       "ele": "8",
@@ -788,14 +868,18 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        72.8308337,
-        18.9321862
+        72.8308343,
+        18.9321868
       ]
     }
   }, {
     "type": "Feature",
     "id": "node/16174445",
     "properties": {
+      "scientist": ["Richa Rikhy"],
+      "institute": "IISER - Pune",
+      "author": "Aashima Dogra",
+      "science": "Cell Biologist",
       "@id": "node/16174445",
       "capital": "5",
       "is_in": "India",
@@ -825,14 +909,18 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        73.8543185,
-        18.5203062
+        73.8543187,
+        18.5203064
       ]
     }
   }, {
     "type": "Feature",
     "id": "node/1998361311",
     "properties": {
+      "scientist": ["Jis Sebastian"],
+      "institute": "Madurai Kamaraj University",
+      "author": "Nandita Jayaraj",
+      "science": "Conservation Ecologist",
       "@id": "node/1998361311",
       "alt_name": "Cochin",
       "name": "Kochi",
@@ -860,6 +948,10 @@
     "type": "Feature",
     "id": "node/2360610107",
     "properties": {
+      "scientist": ["Shiny Hangloo"],
+      "institute": "Shoolini University",
+      "author": "Aashima Dogra",
+      "science": "Biotechnologist",
       "@id": "node/2360610107",
       "int_name": "Solan",
       "is_in": "Himachal Pradesh, India",
@@ -879,6 +971,10 @@
     "type": "Feature",
     "id": "node/872403894",
     "properties": {
+      "scientist": ["Manasa KJ", "Kumudakshi", "Manasa B.", "Sabari M.", "Rashmi M."],
+      "institute": "NIT-Surathkal",
+      "author": "Nandita Jayaraj",
+      "science": "Mathematician",
       "@id": "node/872403894",
       "name": "Suratkal",
       "name:kn": "ಸುರತ್ಕಲ್",
@@ -897,6 +993,10 @@
     "type": "Feature",
     "id": "node/1882920874",
     "properties": {
+      "scientist": ["Monika Panchani"],
+      "institute": "Government College - Bassa",
+      "author": "Aashima Dogra",
+      "science": "Ethnobiologist",
       "@id": "node/1882920874",
       "is_in:country": "India",
       "name": "Bassa (near Mandi)",
@@ -915,6 +1015,10 @@
     "type": "Feature",
     "id": "node/245612641",
     "properties": {
+      "scientist": ["Asha Abraham"],
+      "institute": "St. Aloysius College",
+      "author": "Nandita Jayaraj",
+      "science": "Animal Biotechnologist",
       "@id": "node/245612641",
       "alt_name": "Kudla",
       "capital": "5",
@@ -940,14 +1044,18 @@
     "geometry": {
       "type": "Point",
       "coordinates": [
-        74.8430082,
-        12.8698101
+        74.8430084,
+        12.8698103
       ]
     }
   }, {
     "type": "Feature",
     "id": "node/16174445",
     "properties": {
+      "scientist": ["Mayurika Lahiri"],
+      "institute": "IISER - Pune",
+      "author": "Aashima Dogra",
+      "science": "Cancer Biologist",
       "@id": "node/16174445",
       "capital": "5",
       "is_in": "India",
@@ -985,6 +1093,11 @@
     "type": "Feature",
     "id": "node/3233393892",
     "properties": {
+      "name": "Chennai",
+      "scientist": ["Indumathi D."],
+      "institute": "Institute of Mathematical Sciences",
+      "author": "Nandita Jayaraj",
+      "science": "Particle Physicist",
       "@id": "node/3233393892",
       "capital": "4",
       "gns:dsg": "ADM2",
@@ -995,7 +1108,6 @@
       "is_in:country_code": "IN",
       "is_in:district": "Chennai",
       "is_in:state": "State of Tamil Nadu",
-      "name": "Chennai",
       "name:de": "Chennai",
       "name:en": "Chennai",
       "name:fr": "Chennai",
