@@ -19,15 +19,15 @@ console.log(JSON.stringify(placesLines));
 function getPoints(quantity, a, b) {
     var points = [];
     points.push(a);
-    var ydiff = b[1] - a[1], xdiff = b[0] - a[0];
+    var ydiff = ((b[1] - a[1]) / quantity), xdiff = ((b[0] - a[0]) / quantity);
     var slope = (b[1] - a[1]) / (b[0] - a[0]);
     var x, y;
 
     --quantity;
 
     for (var i = 0; i < quantity; i++) {
-        y = slope === 0 ? 0 : ydiff * (i / quantity);
-        x = slope === 0 ? xdiff * (i / quantity) : y / slope;
+        y = slope === 0 ? 0 : i * ydiff;
+        x = slope === 0 ? i * xdiff : y / slope;
         points.push([Math.round(x) + a[0], Math.round(y) + a[1]]);
     }
 
