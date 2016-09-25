@@ -5,7 +5,7 @@ var linesJSON = require('./lines.json');
 mapboxgl.accessToken = 'pk.eyJ1IjoiYXJ1bmFzYW5rIiwiYSI6ImRKNlNQa3MifQ.SIx-g-J1oWWlP4grTXopcg';
 var map = new mapboxgl.Map({
     container: 'map', // container id
-    style: 'mapbox://styles/arunasank/cimk0le3r00cycem3zhj7s8v2', //stylesheet 
+    style: 'mapbox://styles/mapbox/dark-v9', //stylesheet
     center: [79.0806091,21.1498041], // Center at Nagpur
     zoom: 4 // starting zoom
 });
