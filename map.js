@@ -1,5 +1,6 @@
 'use strict';
 var placesJSON = require('./places.json');
+var linesJSON = require('./lines.json');
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiYXJ1bmFzYW5rIiwiYSI6ImRKNlNQa3MifQ.SIx-g-J1oWWlP4grTXopcg';
 var map = new mapboxgl.Map({
@@ -16,9 +17,33 @@ var places = new mapboxgl.GeoJSONSource({
     'clusterMaxZoom': 14, // Max zoom to cluster points on
     'clusterRadius': 50
 });
+
+var lines = new mapboxgl.GeoJSONSource({
+    'type': 'geojson',
+    'data': linesJSON
+});
+
+
 map.on('style.load', function () {
 
-	map.addSource('places', places);
+    map.addSource('places', places);
+    map.addSource('lines', lines);
+
+    map.addLayer({
+        'id': 'lines-between-places',
+        'type': 'line',
+        'source': 'lines',
+        'interactive': true,
+        'layout': {
+            'visibility': 'visible',
+            'line-join': 'round',
+            'line-cap': 'round'
+        },
+        'paint': {
+            'line-width': 1.25,
+            'line-color': '#e62749'
+        }
+    });
 
     map.addLayer({
         'id': 'non-cluster-places',
@@ -26,7 +51,7 @@ map.on('style.load', function () {
         'source': 'places',
         'interactive': true,
         'layout': {
-            visibility: 'visible'
+            'visibility': 'visible'
         },
         'paint': {
             'circle-radius': 8,
