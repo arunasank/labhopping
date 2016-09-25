@@ -43,7 +43,7 @@ map.on('style.load', function () {
         },
         'paint': {
             'line-width': 1.25,
-            'line-color': '#e62749'
+            'line-color': '#1c84ef'
         }
     });
 
@@ -57,14 +57,14 @@ map.on('style.load', function () {
         },
         'paint': {
             'circle-radius': 8,
-            'circle-color': '#e62749',
+            'circle-color': '#24ff85',
             'circle-blur': .9
         }
     });
     var layers = [
-        [4, '#F28526'],
-        [2, '#F28526'],
-        [0, '#F28526']
+        [4, '#21d6ff'],
+        [2, '#21d6ff'],
+        [0, '#21d6ff']
     ];
     layers.forEach(function (layer, i) {
         map.addLayer({
