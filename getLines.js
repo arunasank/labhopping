@@ -7,13 +7,7 @@ var features = [];
 
 placesJSON.features.forEach(function (place, index) {
     if (index < (placesJSON.features.length - 1)) {
-        var m = slope(placesJSON.features[index].geometry.coordinates, placesJSON.features[index + 1].geometry.coordinates);
-        var b = intercept(placesJSON.features[index].geometry.coordinates, m);
-        var coordinates = [];
-        for (var x = placesJSON.features[index].geometry.coordinates[0]; x <= placesJSON.features[index + 1].geometry.coordinates[0]; x++) {
-            var y = m * x + b;
-            coordinates.push([x, y]);
-        }
+        var coordinates = getPoints(30, placesJSON.features[index].geometry.coordinates, placesJSON.features[index + 1].geometry.coordinates);
         var line = turfLine(coordinates);
         features.push(line);
     }
@@ -22,19 +16,21 @@ placesJSON.features.forEach(function (place, index) {
 var placesLines = turfFc(features);
 console.log(JSON.stringify(placesLines));
 
-function slope(a, b) {
-    if (a[0] === b[0]) {
-        return null;
+function getPoints(quantity, a, b) {
+    var points = [];
+    points.push(a);
+    var ydiff = b[1] - a[1], xdiff = b[0] - a[0];
+    var slope = (b[1] - a[1]) / (b[0] - a[0]);
+    var x, y;
+
+    --quantity;
+
+    for (var i = 0; i < quantity; i++) {
+        y = slope === 0 ? 0 : ydiff * (i / quantity);
+        x = slope === 0 ? xdiff * (i / quantity) : y / slope;
+        points.push([Math.round(x) + a[0], Math.round(y) + a[1]]);
     }
 
-    return (b[1] - a[1]) / (b[0] - a[0]);
-}
-
-function intercept(point, slope) {
-    if (slope === null) {
-        // vertical line
-        return point[0];
-    }
-
-    return point[1] - slope * point[0];
+    points.push(b);
+    return points;
 }
