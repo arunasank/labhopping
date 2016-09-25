@@ -10,6 +10,8 @@ var map = new mapboxgl.Map({
     zoom: 4 // starting zoom
 });
 
+
+
 var places = new mapboxgl.GeoJSONSource({
     'type': 'geojson',
     'data': placesJSON,
@@ -59,7 +61,6 @@ map.on('style.load', function () {
             'circle-blur': .9
         }
     });
-
     var layers = [
         [4, '#F28526'],
         [2, '#F28526'],
@@ -82,6 +83,7 @@ map.on('style.load', function () {
                     ['<', 'point_count', layers[i - 1][0]]]
         });
     });
+
     map.addLayer({
         'id': 'cluster-count',
         'type': 'symbol',
@@ -114,10 +116,9 @@ map.on('click', function (e) {
     if (feature.properties.scientist) {
         var popup = new mapboxgl.Popup()
             .setLngLat(feature.geometry.coordinates)
-            .setHTML("<a target='_blank' href=" + url + ">"+ feature.properties.scientist +"</a>" )
+            .setHTML('<a target="_blank" href=' + url + '>' + feature.properties.scientist + '</a>')
             .addTo(map);
-    }
-    else {
+    } else {
         map.setZoom(6.5);
         map.setCenter(e.lngLat);
     }
