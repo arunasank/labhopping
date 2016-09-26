@@ -1136,5 +1136,66 @@
         13.0796914
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "id": "node/16173235",
+    "properties": {
+      "scientist": ["Shilpa Ranade"],
+      "institute": "Industrial Design Center",
+      "author": "Aashima Dogra",
+      "science": "Animator",
+      "@id": "node/16173235",
+      "capital": "4",
+      "ele": "8",
+      "is_capital": "state",
+      "is_in:continent": "Asia",
+      "is_in:country": "India",
+      "is_in:country_code": "IN",
+      "is_in:iso_3166_2": "IN-MH",
+      "is_in:state": "Maharashtra",
+      "name": "Mumbai",
+      "name:bn": "মুম্বই",
+      "name:cs": "Bombaj",
+      "name:de": "Mumbai",
+      "name:en": "Mumbai",
+      "name:eo": "Mumbajo",
+      "name:es": "Bombay",
+      "name:fr": "Bombay",
+      "name:gu": "મુંબઈ",
+      "name:hi": "मुंबई",
+      "name:ia": "Mumbai",
+      "name:io": "Mumbai",
+      "name:ja": "ムンバイ",
+      "name:jbo": ".mumbais.",
+      "name:kn": "ಮುಂಬೈ",
+      "name:lt": "Mumbajus",
+      "name:ml": "മുംബൈ",
+      "name:mr": "मुंबई",
+      "name:pl": "Mumbaj",
+      "name:ru": "Мумбаи",
+      "name:sk": "Bombaj",
+      "name:sr": "Мумбај",
+      "name:ta": "மும்பை",
+      "name:te": "ముంబై",
+      "name:uk": "Мумбаї",
+      "name:zh": "孟买",
+      "old_name": "Bombay",
+      "old_name:eo": "Bombajo",
+      "old_name:pl": "Bombaj",
+      "place": "city",
+      "place:cca": "a1",
+      "population": "13662885",
+      "rank": "0",
+      "source": "http://en.wikipedia.org/wiki/Mumbai",
+      "wikipedia": "en:Mumbai"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        72.8308337,
+        18.9321862
+      ]
+    }
   }]
 }
