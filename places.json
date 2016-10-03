@@ -1197,5 +1197,45 @@
         18.9321862
       ]
     }
+  },
+  {
+    "type": "Feature",
+    "id": "node/245581432",
+    "properties": {
+      "scientist": ["Ramadevi TS"],
+      "institute": "Vikram Sarabhai Space Center",
+      "author": "Nandita Jayaraj",
+      "science": " Electronics engineer",
+      "@id": "node/245581432",
+      "alt_name": "Trivandrum",
+      "capital": "4",
+      "is_capital": "state",
+      "is_in:continent": "Asia",
+      "is_in:country": "India",
+      "is_in:country_code": "IN",
+      "name": "Thiruvananthapuram",
+      "name:en": "Thiruvananthapuram",
+      "name:hi": "तिरुवनन्तपुरम",
+      "name:ja": "ティルヴァナンタプラム",
+      "name:kn": "ತಿರುವನಂತಪುರಂ",
+      "name:lt": "Thiruvananthapuramas",
+      "name:ml": "തിരുവനന്തപുരം",
+      "name:ru": "Тируванантапурам",
+      "name:ta": "திருவனந்தபுரம",
+      "name:uk": "Тируванантапурам",
+      "name:zh": "特里凡得琅",
+      "place": "city",
+      "place:cca": "b2",
+      "population": "744983",
+      "postal_code": "695001",
+      "wikipedia": "en:Thiruvananthapuram"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        76.9570481,
+        8.5058909
+      ]
+    }
   }]
 }
