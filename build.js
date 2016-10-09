@@ -15,25 +15,19 @@ var map = new mapboxgl.Map({
 });
 
 
-
-var places = new mapboxgl.GeoJSONSource({
-    'type': 'geojson',
-    'data': placesJSON,
-    'cluster': true,
-    'clusterMaxZoom': 14, // Max zoom to cluster points on
-    'clusterRadius': 50
-});
-
-var lines = new mapboxgl.GeoJSONSource({
-    'type': 'geojson',
-    'data': linesJSON
-});
-
-
 map.on('style.load', function () {
     mapboxgl.addClaimedBoundaries(map, 'IN');
-    map.addSource('places', places);
-    map.addSource('lines', lines);
+    map.addSource('places', {
+        'type': 'geojson',
+        'data': placesJSON,
+        'cluster': true,
+        'clusterMaxZoom': 14, // Max zoom to cluster points on
+        'clusterRadius': 50
+    });
+    map.addSource('lines', {
+        'type': 'geojson',
+        'data': linesJSON
+    });
 
     map.addLayer({
         'id': 'lines-between-places',
