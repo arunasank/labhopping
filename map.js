@@ -13,6 +13,37 @@ var map = new mapboxgl.Map({
 
 map.on('style.load', function () {
     mapboxgl.addClaimedBoundaries(map, 'IN');
+    addPlaces();
+    addLines();
+    clusterPlaces();
+
+});
+
+
+
+map.on('click', function (e) {
+    var features = map.queryRenderedFeatures(e.point, {layers: ['non-cluster-places']});
+
+    if (!features.length) {
+        return;
+    }
+
+    var feature = features[0];
+
+    // Populate the popup and set its coordinates
+    // based on the feature found.
+    if (feature.properties.scientist) {
+        var popup = new mapboxgl.Popup()
+            .setLngLat(feature.geometry.coordinates)
+            .setHTML('<a target="_blank" href=' + url + '>' + feature.properties.scientist + '</a>')
+            .addTo(map);
+    } else {
+        map.setZoom(6.5);
+        map.setCenter(e.lngLat);
+    }
+});
+
+function addPlaces() {
     map.addSource('places', {
         'type': 'geojson',
         'data': placesJSON,
@@ -20,27 +51,9 @@ map.on('style.load', function () {
         'clusterMaxZoom': 14, // Max zoom to cluster points on
         'clusterRadius': 50
     });
-    map.addSource('lines', {
-        'type': 'geojson',
-        'data': linesJSON
-    });
+}
 
-    map.addLayer({
-        'id': 'lines-between-places',
-        'type': 'line',
-        'source': 'lines',
-        'interactive': true,
-        'layout': {
-            'visibility': 'visible',
-            'line-join': 'round',
-            'line-cap': 'round'
-        },
-        'paint': {
-            'line-width': 1.25,
-            'line-color': '#1c84ef'
-        }
-    });
-
+function clusterPlaces() {
     map.addLayer({
         'id': 'non-cluster-places',
         'type': 'circle',
@@ -91,32 +104,30 @@ map.on('style.load', function () {
             'text-size': 12
         }
     });
+}
 
-});
+function addLines() {
+    map.addSource('lines', {
+        'type': 'geojson',
+        'data': linesJSON
+    });
 
-
-
-map.on('click', function (e) {
-    var features = map.queryRenderedFeatures(e.point, {layers: ['non-cluster-places']});
-
-    if (!features.length) {
-        return;
-    }
-
-    var feature = features[0];
-
-    // Populate the popup and set its coordinates
-    // based on the feature found.
-    if (feature.properties.scientist) {
-        var popup = new mapboxgl.Popup()
-            .setLngLat(feature.geometry.coordinates)
-            .setHTML('<a target="_blank" href=' + url + '>' + feature.properties.scientist + '</a>')
-            .addTo(map);
-    } else {
-        map.setZoom(6.5);
-        map.setCenter(e.lngLat);
-    }
-});
+    map.addLayer({
+        'id': 'lines-between-places',
+        'type': 'line',
+        'source': 'lines',
+        'interactive': true,
+        'layout': {
+            'visibility': 'visible',
+            'line-join': 'round',
+            'line-cap': 'round'
+        },
+        'paint': {
+            'line-width': 1.25,
+            'line-color': '#1c84ef'
+        }
+    });
+}
 
 
 
