@@ -1,6 +1,8 @@
 'use strict';
 var placesJSON = require('./places.json');
 var linesJSON = require('./lines.json');
+var point = require('turf-point');
+
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiYXJ1bmFzYW5rIiwiYSI6ImRKNlNQa3MifQ.SIx-g-J1oWWlP4grTXopcg';
 var map = new mapboxgl.Map({
@@ -16,10 +18,9 @@ map.on('style.load', function () {
     addPlaces();
     addLines();
     clusterPlaces();
+    moveBus();
 
 });
-
-
 
 map.on('click', function (e) {
     var features = map.queryRenderedFeatures(e.point, {layers: ['non-cluster-places']});
@@ -125,6 +126,33 @@ function addLines() {
         'paint': {
             'line-width': 1.25,
             'line-color': '#1c84ef'
+        }
+    });
+}
+
+function moveBus() {
+    var busLine = linesJSON.features[linesJSON.features.length - 1];
+    var busPointIndex = 0;
+    var busPoints = busLine.geometry.coordinates;
+    var busPoint = point(busPoints[busPointIndex]);
+    var add = 1;
+    window.setInterval(function () {
+        busPointIndex += add;
+        add = (busPointIndex === busPoints.length) ? -1 : ((busPointIndex === 0) ? 1 : add);
+        busPoint = point(busPoints[busPointIndex]);
+        map.getSource('bus').setData(busPoint);
+    }, 300);
+
+    map.addSource('bus', {
+        type: 'geojson',
+        data: busPoint
+    });
+    map.addLayer({
+        'id': 'bus',
+        'type': 'symbol',
+        'source': 'bus',
+        'layout': {
+            'icon-image': 'bus-11'
         }
     });
 }
