@@ -31,7 +31,7 @@ var lines = new mapboxgl.GeoJSONSource({
 
 
 map.on('style.load', function () {
-
+    mapboxgl.addClaimedBoundaries(map, 'IN');
     map.addSource('places', places);
     map.addSource('lines', lines);
 
