@@ -5,6 +5,8 @@ module.exports={"type":"FeatureCollection","features":[{"type":"Feature","geomet
 'use strict';
 var placesJSON = require('./places.json');
 var linesJSON = require('./lines.json');
+var point = require('turf-point');
+
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiYXJ1bmFzYW5rIiwiYSI6ImRKNlNQa3MifQ.SIx-g-J1oWWlP4grTXopcg';
 var map = new mapboxgl.Map({
@@ -20,10 +22,9 @@ map.on('style.load', function () {
     addPlaces();
     addLines();
     clusterPlaces();
+    moveBus();
 
 });
-
-
 
 map.on('click', function (e) {
     var features = map.queryRenderedFeatures(e.point, {layers: ['non-cluster-places']});
@@ -133,10 +134,69 @@ function addLines() {
     });
 }
 
+function moveBus() {
+    var busLine = linesJSON.features[linesJSON.features.length - 1];
+    var busPointIndex = 0;
+    var busPoints = busLine.geometry.coordinates;
+    var busPoint = point(busPoints[busPointIndex]);
+    var add = 1;
+    window.setInterval(function () {
+        busPointIndex += add;
+        add = (busPointIndex === busPoints.length) ? -1 : ((busPointIndex === 0) ? 1 : add);
+        busPoint = point(busPoints[busPointIndex]);
+        map.getSource('bus').setData(busPoint);
+    }, 300);
+
+    map.addSource('bus', {
+        type: 'geojson',
+        data: busPoint
+    });
+    map.addLayer({
+        'id': 'bus',
+        'type': 'symbol',
+        'source': 'bus',
+        'layout': {
+            'icon-image': 'bus-11'
+        }
+    });
+}
 
 
 
-},{"./lines.json":1,"./places.json":3}],3:[function(require,module,exports){
+
+},{"./lines.json":1,"./places.json":4,"turf-point":3}],3:[function(require,module,exports){
+/**
+ * Takes coordinates and properties (optional) and returns a new {@link Point} feature.
+ *
+ * @module turf/point
+ * @category helper
+ * @param {number} longitude position west to east in decimal degrees
+ * @param {number} latitude position south to north in decimal degrees
+ * @param {Object} properties an Object that is used as the {@link Feature}'s
+ * properties
+ * @return {Point} a Point feature
+ * @example
+ * var pt1 = turf.point([-75.343, 39.984]);
+ *
+ * //=pt1
+ */
+var isArray = Array.isArray || function(arg) {
+  return Object.prototype.toString.call(arg) === '[object Array]';
+};
+module.exports = function(coordinates, properties) {
+  if (!isArray(coordinates)) throw new Error('Coordinates must be an array');
+  if (coordinates.length < 2) throw new Error('Coordinates must be at least 2 numbers long');
+  return {
+    type: "Feature",
+    geometry: {
+      type: "Point",
+      coordinates: coordinates
+    },
+    properties: properties || {}
+  };
+};
+
+},{}],4:[function(require,module,exports){
 module.exports={
   "type": "FeatureCollection",
   "features": [{
