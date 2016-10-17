@@ -1273,6 +1273,54 @@
           15.3004543
         ]
       }
+    },
+    {
+    "type": "Feature",
+    "id": "node/3233393892",
+    "properties": {
+      "scientist": ["Sushama Agarwal"],
+      "institute": "Ramanujan Institute of Advanced Study in Mathematics",
+      "author": "Nandita Jayaraj",
+      "science": "Mathematician",
+      "@id": "node/3233393892",
+      "capital": "4",
+      "gns:dsg": "ADM2",
+      "gns:uni": "-2919695",
+      "is_capital": "state",
+      "is_in:continent": "Asia",
+      "is_in:country": "India",
+      "is_in:country_code": "IN",
+      "is_in:district": "Chennai",
+      "is_in:state": "State of Tamil Nadu",
+      "name": "Chennai",
+      "name:de": "Chennai",
+      "name:en": "Chennai",
+      "name:fr": "Chennai",
+      "name:hi": "चेन्नई",
+      "name:ja": "チェンナイ",
+      "name:kn": "ಚೆನ್ನೈ",
+      "name:lt": "Čenajus",
+      "name:ml": "ചെന്നൈ",
+      "name:pl": "Ćennaj",
+      "name:ru": "Ченнаи",
+      "name:ta": "சென்னை",
+      "name:te": "చెన్నై",
+      "name:uk": "Ченнаї",
+      "old_name": "Madras",
+      "place": "city",
+      "place:cca": "a1",
+      "population": "4681087",
+      "postal_code": "600001",
+      "source": "GNS;http://en.wikipedia.org/wiki/Chennai",
+      "wikipedia": "en:Chennai"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        80.2829535,
+        13.0796916
+      ]
     }
+  }
  ]
 }
