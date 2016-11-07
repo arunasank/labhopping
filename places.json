@@ -1369,6 +1369,42 @@
         13.0796916
       ]
     }
-  }
+  },
+  {
+      "type": "Feature",
+      "id": "node/2237699941",
+      "properties": {
+        "scientist": ["Prachi Torane"],
+        "institute": "Goa University",
+        "author": "Aashima Dogra",
+        "science": "Chemist",
+        "@id": "node/2237699941",
+        "is_in:continent": "Asia",
+        "is_in:country": "India",
+        "is_in:country_code": "IN",
+        "name": "Goa",
+        "name:en": "Goa",
+        "name:eo": "Goao",
+        "name:hi": "गोवा",
+        "name:hu": "Goa",
+        "name:ja": "ゴア",
+        "name:kn": "ಗೋವ",
+        "name:kok": "गोंय",
+        "name:mr": "गोआ",
+        "name:ru": "Гоа",
+        "name:uk": "Ґоа",
+        "place": "state",
+        "ref": "GA",
+        "state_code": "GA",
+        "wikipedia": "en:Goa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.0855134,
+          15.3004543
+        ]
+      }
+    }
  ]
 }
