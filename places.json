@@ -1608,6 +1608,39 @@
         13.0796916
       ]
     }
-  }
+  },
+  {
+      "type": "Feature",
+      "id": "node/245762879",
+      "properties": {
+        "scientist": ["Orus Ilyas"],
+        "institute": "Aligarh Muslim University",
+        "author": "Nandita Jayaraj",
+        "science": "Wildlife Biologist",
+        "@id": "node/245762879",
+        "AND_a_nosr_p": "10010329",
+        "is_in:continent": "Asia",
+        "is_in:country": "India",
+        "is_in:state": "Uttar Pradesh",
+        "name": "Aligarh",
+        "name:en": "Aligarh",
+        "name:hi": "अलीगढ",
+        "name:ja": "アリーガル",
+        "name:kn": "ಅಲಿಘರ್",
+        "name:ru": "Алигарх",
+        "place": "city",
+        "population": "100000",
+        "postal_code": "202001",
+        "source": "AND",
+        "wikidata": "Q201832"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.0690216,
+          27.8815412
+        ]
+      }
+    }
  ]
 }
