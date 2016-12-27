@@ -1856,6 +1856,43 @@
         28.6138967
       ]
     }
+  },{
+    "type": "Feature",
+    "id": "node/2022807192",
+    "properties": {
+      "scientist": ["Urmi Nanda Biswas"],
+      "institute": "MS University",
+      "author": "Aashima Dogra",
+      "science": "Social Psychologist",
+      "@id": "node/2022807192",
+      "capital": "5",
+      "is_in:continent": "Asia",
+      "name": "Vadodara",
+      "name:en": "Vadodara",
+      "name:gu": "વડોદરા",
+      "name:hi": "बड़ोदरा",
+      "name:ja": "ヴァドーダラー",
+      "name:kn": "ವಡೋದರಾ",
+      "name:ko": "바도다라",
+      "name:mr": "वदोदरा",
+      "name:ru": "Вадодара",
+      "name:ta": "வடோதரா",
+      "name:uk": "Вадодара",
+      "name:zh": "巴罗达",
+      "place": "city",
+      "place:cca": "b1",
+      "population": "500000",
+      "postal_code": "390001",
+      "wikidata": "Q11909",
+      "wikipedia": "en:Vadodara"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        73.1957373,
+        22.297076
+      ]
+    }
   }
  ]
 }
